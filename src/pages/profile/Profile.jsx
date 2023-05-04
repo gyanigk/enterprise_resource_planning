@@ -1,7 +1,7 @@
-import Grid from '@mui/material/Grid';
-import ProfileChart from '../../components/chart/ProfileChart'
-import List from '../../components/order/Order'
-import './profile.css'
+import Grid from "@mui/material/Grid";
+import ProfileChart from "../../components/chart/ProfileChart";
+import List from "../../components/order/Order";
+import "./profile.css";
 
 const rows = [
   {
@@ -43,46 +43,53 @@ const rows = [
     amount: 920,
     method: "Online",
     status: "Approved",
-  }
+  },
 ];
 
 function Profile() {
   return (
-    <Grid container rowSpacing={5} sx={{ paddingLeft: 2, paddingRight: 2 }} >
-      <Grid container item lg={12} md={12} xs={12} columnSpacing={3} className="profile-top">
+    <Grid container rowSpacing={5} sx={{ paddingLeft: 2, paddingRight: 2 }}>
+      <Grid
+        container
+        item
+        lg={12}
+        md={12}
+        xs={12}
+        columnSpacing={3}
+        className="profile-top"
+      >
         <Grid item lg={4} md={6} xs={12} className="profile-left">
           <div className="profile-editButton">Edit</div>
           <h1 className="profile-title">Information</h1>
           <div className="profile-item">
             <img
-              src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              src={require("./profilePhoto.png")}
               alt="profile photo"
-              className="profile-itemImg" />
+              className="profile-itemImg"
+            />
             <div className="profile-details">
-              <h1 className="profile-itemTitle">Jane Doe</h1>
+              <h1 className="profile-itemTitle">Piyush Goswami</h1>
               <div className="profile-detailItem">
                 <span className="profile-itemKey">Email:</span>
-                <span className="profile-itemValue">janedoe@gmail.com</span>
+                <span className="profile-itemValue">peluop.gg@gmail.com</span>
               </div>
               <div className="profile-detailItem">
                 <span className="profile-itemKey">Phone:</span>
-                <span className="profile-itemValue">+1 2345 67 89</span>
+                <span className="profile-itemValue">+91 8434738244</span>
               </div>
               <div className="profile-detailItem">
                 <span className="profile-itemKey">Address:</span>
-                <span className="profile-itemValue">
-                  Elton St. 234 Garden Yd. NewYork
-                </span>
+                <span className="profile-itemValue">KIIT</span>
               </div>
               <div className="profile-detailItem">
                 <span className="profile-itemKey">Country:</span>
-                <span className="profile-itemValue">USA</span>
+                <span className="profile-itemValue">India</span>
               </div>
             </div>
           </div>
         </Grid>
         <Grid item lg={8} md={8} xs={12} className="profile-right">
-          <ProfileChart/>
+          <ProfileChart />
         </Grid>
       </Grid>
       <Grid container item lg={12} md={12} xs={12} className="profile-bottom">
@@ -90,7 +97,7 @@ function Profile() {
         <List rows={rows} type={"Address"} />
       </Grid>
     </Grid>
-  )
+  );
 }
 
-export default Profile
+export default Profile;

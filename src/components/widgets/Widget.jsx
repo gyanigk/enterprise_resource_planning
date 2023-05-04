@@ -4,10 +4,9 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
-import './widget.css'
+import "./widget.css";
 
 function Widget({ type }) {
-
   let data;
 
   switch (type) {
@@ -27,7 +26,7 @@ function Widget({ type }) {
           />
         ),
         diff: 20,
-        pos: true
+        pos: true,
       };
       break;
     case "order":
@@ -46,7 +45,7 @@ function Widget({ type }) {
           />
         ),
         diff: 35,
-        pos: false
+        pos: false,
       };
       break;
     case "earning":
@@ -62,7 +61,7 @@ function Widget({ type }) {
           />
         ),
         diff: 47,
-        pos: true
+        pos: true,
       };
       break;
     case "balance":
@@ -81,7 +80,7 @@ function Widget({ type }) {
           />
         ),
         diff: 65,
-        pos: false
+        pos: false,
       };
       break;
     default:
@@ -93,7 +92,7 @@ function Widget({ type }) {
       <div className="left">
         <span className="title">{data.title}</span>
         <span className="counter">
-          {data.isMoney && "$"} {data.amount}
+          {data.isMoney && "₹"} {data.amount}
         </span>
         <span className="link">{data.link}</span>
       </div>
@@ -105,7 +104,7 @@ function Widget({ type }) {
         {data.icon}
       </div>
     </div>
-  )
+  );
 }
 
-export default Widget
+export default Widget;
