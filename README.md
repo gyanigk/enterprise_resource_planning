@@ -9,7 +9,13 @@ A dashboard and productivity tools which can help organizations to manage day-to
  - Careful implementation of an ERP system is crucial for its effectiveness.
  - An Enterprise Resource Planning (ERP) platform can integrate and manage various company processes, providing benefits such as improved communication and real-time data reporting accuracy.
 
-![image](https://user-images.githubusercontent.com/15231699/236397898-cff2e5c1-dcf6-4cee-bf80-515f8329444b.png)
+## Requirements
+
+- React
+- NodeJS
+- Visual Studio
+- Vanila JS
+- Netlify/heroku
 
 ## Preview
 ![image](https://user-images.githubusercontent.com/15231699/236398057-ff1ca4af-82ca-435a-a4ed-3e4527d5da20.png)
